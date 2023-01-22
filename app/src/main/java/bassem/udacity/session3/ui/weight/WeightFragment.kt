@@ -10,6 +10,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.navigation.fragment.findNavController
 import bassem.udacity.session3.R
 import bassem.udacity.session3.databinding.FragmentWeightBinding
+import bassem.udacity.session3.ui.SharedViewModel
 
 class WeightFragment : Fragment(), MenuProvider {
 

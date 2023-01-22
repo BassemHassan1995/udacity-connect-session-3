@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import bassem.udacity.session3.databinding.FragmentInputBinding
+import bassem.udacity.session3.ui.SharedViewModel
 
 class InputFragment : Fragment() {
 
