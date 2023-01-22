@@ -21,7 +21,7 @@ class WelcomeFragment : Fragment() {
             .apply {
                 btnLetsStart.setOnClickListener {
                     findNavController().navigate(
-                        directions = WelcomeFragmentDirections.actionWelcomeFragmentToInputFragment()
+                        directions = WelcomeFragmentDirections.actionWelcomeFragmentToLoginFragment()
                     )
                 }
             }

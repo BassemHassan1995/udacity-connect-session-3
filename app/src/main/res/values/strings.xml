@@ -1,16 +1,13 @@
 <resources>
     <string name="app_name">Session 3</string>
 
-    <string name="name">Name</string>
-    <string name="name_hint">Please enter your name</string>
-    <string name="height">Height in cm</string>
-    <string name="calculate_ibw">Calculate IBW</string>
-    <string name="your_ideal_body_weight_is">Your Ideal Body Weight is</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
     <string name="hello">Hello %s, How are you?</string>
-    <string name="weight_kg">%d KG</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="new_calculation">New Calculation</string>
+    <string name="logout">Logout</string>
     <string name="lets_start">Let\'s Start</string>
-    <string name="welcome_to_ibw_calculator">Welcome to Ideal Body Weight Calculator</string>
+    <string name="welcome_to_session_3">Welcome to Session 3</string>
+    <string name="home">Home</string>
+    <string name="student">Student</string>
 </resources>

@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="bassem.udacity.session3.ui.SharedViewModel" />
+            type="bassem.udacity.session3.ui.login.LoginViewModel" />
 
     </data>
 
@@ -20,7 +20,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/name"
+            android:hint="@string/user_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -28,64 +28,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="@={viewModel.user.name}" />
+                android:text="@={viewModel.user.userName}" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tf_height"
+            android:id="@+id/tf_password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="@string/height"
+            android:hint="@string/password"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tf_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:text="@={`` + viewModel.user.height}" />
+                android:inputType="textPassword"
+                android:text="@={viewModel.user.password}" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <RadioGroup
-            android:id="@+id/rg_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/tf_height">
-
-            <RadioButton
-                android:id="@+id/male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checked="@={viewModel.user.male}"
-                android:text="@string/male" />
-
-            <RadioButton
-                android:id="@+id/female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checked="@={!viewModel.user.male}"
-                android:text="@string/female" />
-        </RadioGroup>
 
         <Button
             android:id="@+id/btn_calculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:onClick="@{() -> viewModel.onCalculateIBWButtonClicked()}"
+            android:onClick="@{() -> viewModel.onLoginButtonClicked()}"
             android:padding="10dp"
-            android:text="@string/calculate_ibw"
+            android:text="@string/login"
             android:textAllCaps="false"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/rg_gender" />
+            app:layout_constraintTop_toBottomOf="@id/tf_password" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
