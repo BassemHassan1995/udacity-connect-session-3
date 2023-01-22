@@ -4,7 +4,7 @@
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="hello">Hello %s, How are you?</string>
+    <string name="hello">Hello %s\nHow things are going?</string>
     <string name="logout">Logout</string>
     <string name="lets_start">Let\'s Start</string>
     <string name="welcome_to_session_3">Welcome to Session 3</string>

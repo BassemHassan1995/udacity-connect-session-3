@@ -23,7 +23,7 @@ class HomeFragment : Fragment(), MenuProvider {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater)
-        binding.userName = args.name
+        binding.userName = args.userName
 
         addMenu()
 

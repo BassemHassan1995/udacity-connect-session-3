@@ -36,7 +36,7 @@
             app:popUpTo="@id/welcomeFragment"
             app:popUpToInclusive="true" />
         <argument
-            android:name="name"
+            android:name="userName"
             android:defaultValue="Student"
             app:argType="string" />
     </fragment>

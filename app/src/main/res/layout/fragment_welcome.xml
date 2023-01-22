@@ -11,25 +11,23 @@
             android:id="@+id/tf_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="@string/welcome_to_session_3"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </TextView>
+            app:layout_constraintBottom_toTopOf="@id/btn_lets_start"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btn_lets_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:padding="10dp"
             android:text="@string/lets_start"
             android:textAllCaps="false"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/tf_name" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
